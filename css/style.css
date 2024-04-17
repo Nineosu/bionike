@@ -548,7 +548,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
 /* -- main -- */
 
 .main-bunner {
-    background: url('/img/main-bunner.jpg') no-repeat center;
+    background: url('../img/main-bunner.jpg') no-repeat center;
     background-size: cover;
     /* min-height: 560px; */
     padding: 140px 40px;
@@ -606,7 +606,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
     width: 56px;
     height: 56px;
     border: 1px solid #000;
-    background: url('/img/swiper-arrow.svg') no-repeat center;
+    background: url('../img/swiper-arrow.svg') no-repeat center;
     background-size: auto;
     cursor: pointer;
 }
@@ -815,6 +815,9 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
     justify-content: space-between;
     gap: 40px;
 }
+.about__block {
+    flex-shrink: 0;
+}
 .about-title {
     margin-bottom: 16px;
 }
@@ -920,7 +923,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
     width: 100%;
     border: none;
     padding: 16px 8px 16px 48px;
-    background: url(/img/form-ico.svg) no-repeat 18px #fff;
+    background: url('../img/form-ico.svg') no-repeat 18px #fff;
     border-bottom: 1px solid #06070A;
 
     font-size: 16px;
@@ -993,7 +996,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
     display: inline-block;
     width: 8px;
     height: 12px;
-    background: url('/img/breadcrumbs-arrow.svg') no-repeat center;
+    background: url('../img/breadcrumbs-arrow.svg') no-repeat center;
     background-size: contain;
     margin-right: 10px;
 }
@@ -1511,7 +1514,7 @@ p.basket__card-price-second {
     right: 8px;
     width: 16px;
     height: 16px;
-    background: url(/img/coupon-arrow.svg) no-repeat center;
+    background: url('../img/coupon-arrow.svg') no-repeat center;
 }
 .basket__order-checkout {
     margin-bottom: 25px;
