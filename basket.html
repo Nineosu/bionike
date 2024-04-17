@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionike</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__sections">
+                <div class="header__section">
+                    <p class="header__subtitle">100% оригинальная продукция!</p>
+                    <nav class="header__nav">
+                        <ul class="header__nav-links">
+                            <li class="header__nav-link">Бестселлеры</li>
+                            <li class="header__nav-link">Промоакции</li>
+                            <li class="header__nav-link">Полезные статьи
+                            </li>
+                            <li class="header__nav-link">О компании</li>
+                            <li class="header__nav-link">Доставка и оплата</li>
+                            <li class="header__nav-link">Контакты</li>
+                        </ul>
+                    </nav>
+                    <p class="header__subtitle">Доставка по всей территории РФ</p>
+                </div>
+                <div class="header__section">
+                    <input type="text" class="header__search" placeholder="Поиск по сайту">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__btns">
+                        <a href="#!" class="header__btn">
+                            <img src="./img/account-ico.svg" alt="" class="header__btn-ico">
+                        </a>
+                        <a href="#!" class="header__btn">
+                            <img src="./img/favourite-ico.svg" alt="" class="header__btn-ico">
+                        </a>
+                        <a href="#!" class="header__btn basket-btn">
+                            <img src="./img/basket-ico.svg" alt="" class="header__btn-ico">
+                            <span class="basket__btn-value">10</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__section">
+                    <div class="header__menu">
+                        <a href="#!" class="header__menu-item" data-menu="1">Уход за лицом</a>
+                        <a href="#!" class="header__menu-item" data-menu="2">Уход за волосами и кожей головы</a>
+                        <a href="#!" class="header__menu-item">Уход за телом</a>
+                        <a href="#!" class="header__menu-item">Солнцезащитные средства</a>
+                        <a href="#!" class="header__menu-item">Товары для детей</a>
+                        <a href="#!" class="header__menu-item">Гипоаллегенный макияж</a>
+                    </div>
+                </div>
+                <div class="header__section header__submenu" data-menu="1">
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Тип продукта</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 03</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 04</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 05</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Потребность кожи</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 03</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Линейка</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 03</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 04</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 05</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="index.html">
+                <img src="./img/breadcrumbs-home.svg" alt="" class="breadcrumbs__home-ico"></a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__item-link" href="#">Корзина</a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="basket-page">
+        <section class="basket">
+            <div class="wrapper">
+                <h1 class="main-title basket-title">Корзина</h1>
+    
+                <div class="basket__container">
+                    <div class="basket__products">
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__order">
+                        <form action="" class="basket__order-form">
+                            <p class="basket__order-title">Сумма заказа</p>
+                            <div class="basket__order-block">
+                                <p class="basket__order-desc">Сумма:</p>
+                                <p class="basket__order-value">25 081 ₽ </p>
+                            </div>
+                            <div class="basket__order-block">
+                                <p class="basket__order-desc">Скидка:</p>
+                                <p class="basket__order-value">5 081 ₽ </p>
+                            </div>
+                            <div class="basket__order-block">
+                                <p class="basket__order-desc">Скидка по промокоду:</p>
+                                <p class="basket__order-value">5 081 ₽ </p>
+                            </div>
+        
+                            <div class="basket__order-block basket__order-total">
+                                <p class="basket__order-desc basket__order-total-title">ИТОГО</p>
+                                <p class="basket__order-value">25 081 ₽ </p>
+                                <p class="basket__order-desc">Без учета доставки</p>
+                            </div>
+        
+                            <div class="basket__order-coupon">
+                                <p class="order__coupon-title">У вас есть купон?</p>
+                                <label class="order__coupon-label arrow__right-label"><input type="text" class="order__coupon-input" placeholder="Ввести купон"></label>
+                            </div>
+    
+                            <a href="#!" class="basket__order-checkout more-link more__black-link">Оформить заказ <img src="./img/about-arrow.svg" alt=""></a>
+                            <a href="" class="basket__order-back more-link"><img src="./img/about-arrow.svg" alt="">Вернуться к покупкам</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product__slider">
+            <div class="wrapper">
+                <div class="section__header">
+                    <h2 class="section-title">Вам может понравиться</h2>
+
+                    <div class="slider-btns">
+                        <div class="product-slider-prev product-page-prev"></div>
+                        <div class="product-slider-next product-page-next"></div>
+                    </div>
+                </div>
+
+                <div class="swiper product-slider product-page-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-1.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Линейка</a>
+                                        <p class="product__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-2.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-3.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-4.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-4.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__title">Узнавайте первыми о распродажах и новинках!</h3>
+                    <p class="footer__subtitle">Зарегистрируйтесь сейчас, чтобы первыми получать информацию о новинках и спецпредложениях.</p>
+                </div>
+                <div class="footer__block">
+                    <form action="" class="footer__form">
+                        <div class="footer__form-block">
+                            <input type="email" class="footer__mail" placeholder="Ваша электронная почта">
+                            <button type="submit" class="footer__btn more-link more__black-link">Подписаться <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></button>
+                        </div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-view">
+                              <img src="./img/checkbox.svg" alt="">
+                            </span>
+                            Я согласен на обработку Персональных данных и все такое в длинном длинном тексте о том как мы заботимся о вашей безопасности
+                        </label>
+                    </form>
+
+                </div>
+            </div>
+            <div class="footer__wrapper2">
+                <div class="footer__block">
+                    <img src="./img/footer-logo.png" alt="" class="footer__logo">
+                </div>
+                <div class="footer__block footer__lists">
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Наш каталог</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за лицом</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за телом</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за волосами и кожей головы</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Солнцезащитные средства</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Товары для детей</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Гипоаллергенный макияж</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Нужна помощь</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Личный кабинет</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Политика возврата</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Информация об оплате картами</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Политика в отношении обработки персональных данных</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Согласие на обработку персональных данных</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Связаться с нами</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">О НАС</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Каталог продукции</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Бестселлеры</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Промоакции</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Статьи и новости</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Оферта (пользовательское соглашение)</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">©2024 Официальный дистрибьютор и уполномоченное лицо  производителя товаров, маркированных товарным знаком BioNike – ООО  «МИЛОРАДА» – 129085, г. Москва, ул. Годовикова, д. 9, стр.16 – Все  авторские права защищены.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

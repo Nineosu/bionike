@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionike</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__sections">
+                <div class="header__section">
+                    <p class="header__subtitle">100% оригинальная продукция!</p>
+                    <nav class="header__nav">
+                        <ul class="header__nav-links">
+                            <li class="header__nav-link">Бестселлеры</li>
+                            <li class="header__nav-link">Промоакции</li>
+                            <li class="header__nav-link">Полезные статьи
+                            </li>
+                            <li class="header__nav-link">О компании</li>
+                            <li class="header__nav-link">Доставка и оплата</li>
+                            <li class="header__nav-link">Контакты</li>
+                        </ul>
+                    </nav>
+                    <p class="header__subtitle">Доставка по всей территории РФ</p>
+                </div>
+                <div class="header__section">
+                    <input type="text" class="header__search" placeholder="Поиск по сайту">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__btns">
+                        <a href="#!" class="header__btn">
+                            <img src="./img/account-ico.svg" alt="" class="header__btn-ico">
+                        </a>
+                        <a href="#!" class="header__btn">
+                            <img src="./img/favourite-ico.svg" alt="" class="header__btn-ico">
+                        </a>
+                        <a href="#!" class="header__btn basket-btn">
+                            <img src="./img/basket-ico.svg" alt="" class="header__btn-ico">
+                            <span class="basket__btn-value">10</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__section">
+                    <div class="header__menu">
+                        <a href="#!" class="header__menu-item" data-menu="1">Уход за лицом</a>
+                        <a href="#!" class="header__menu-item" data-menu="2">Уход за волосами и кожей головы</a>
+                        <a href="#!" class="header__menu-item">Уход за телом</a>
+                        <a href="#!" class="header__menu-item">Солнцезащитные средства</a>
+                        <a href="#!" class="header__menu-item">Товары для детей</a>
+                        <a href="#!" class="header__menu-item">Гипоаллегенный макияж</a>
+                    </div>
+                </div>
+                <div class="header__section header__submenu" data-menu="1">
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Тип продукта</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 03</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 04</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Тип продукта 05</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Потребность кожи</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Потребность кожи 03</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__submenu-block">
+                        <p class="submenu__block-title">Линейка</p>
+                        <ul class="header__submenu-list">
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 01</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 02</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 03</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 04</a>
+                            </li>
+                            <li class="submenu__list-item">
+                                <a href="#!" class="submenu__list-link">Линейка продукта 05</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="index.html">
+                <img src="./img/breadcrumbs-home.svg" alt="" class="breadcrumbs__home-ico"></a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__item-link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__item-link" href="#">BioNike DEFENCE COLOR Hydra glow увлажняющий тональный крем SPF15, 30 мл</a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="product-page">
+        <div class="wrapper">
+            <section class="product__page">
+                <div class="product__page-block">
+                    <div class="product__page-bigImg">
+                        <img src="./img/product-page-main.png" alt="">
+                    </div>
+                    <div class="product__page-images">
+                        <img src="./img/product-page-1.png" alt="" class="product__images-item">
+                        <img src="./img/product-page-2.png" alt="" class="product__images-item">
+                        <img src="./img/product-page-3.png" alt="" class="product__images-item">
+                        <img src="./img/product-page-4.png" alt="" class="product__images-item">
+                        <img src="./img/product-page-5.png" alt="" class="product__images-item">
+                        <img src="./img/product-page-6.png" alt="" class="product__images-item">
+                    </div>
+                </div>
+                <div class="product__page-block">
+                    <div class="product__page-main">
+                        <p class="product__brand">DEFENCE COLOR</p>
+                        <h2 class="product__title">BioNike DEFENCE COLOR Hydra glow увлажняющий тональный крем SPF15, 30 мл</h2>
+                        <p class="product__subinfo">Hydra glow </p>
+
+                        <div class="product__main-rating">
+                            <div class="product__rating-stars">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                            </div>
+                            <p class="product__rating-value">4.99</p>
+                            <p class="product__rating-info">на основании <span>150 отзывов</span></p>
+                        </div>
+
+                        <p class="product__desc">Корректирующий крем-гель с ниацинамидом и цинком для борьбы с несовершенствами помогает уменьшить количество высыпаний на коже</p>
+
+                        <div class="product__color">
+                            <p class="product__color-title">Выберите цвет</p>
+                            <div class="custom-select-wrapper simple-select color-select">
+                                <div class="custom-select">
+                                  <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                  <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                </div>
+                                <div class="custom-options">
+                                  <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                  <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                  <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                  <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                  <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__actions">
+                            <div class="product__price">
+                                <p class="product__price-main">3 520 ₽</p>
+                                <p class="product__price-second">3 530 ₽</p>
+                            </div>
+                            <div class="product__btns">
+                                <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+
+                                <a href="#!" class="product__favourite-btn"><img src="./img/product-favourite.svg" alt="" class="product__favourite-img"></a>
+                            </div>
+                        </div>
+
+                        <div class="product__info">
+                            <div class="product__info-card">
+                                <img src="./img/product-info-1.svg" alt="" class="product__info-img">
+
+                                <div class="product__info-text">
+                                    <p class="product__info-title">Оплата</p>
+                                    <p class="product__info-subtitle">100%  безопасная онлайн оплата на сайте </p>
+                                </div>
+                                
+                                <div class="product__info-ballon">
+                                    <img src="./img/product-info-ballon.svg" alt="" class="product__ballon-img">
+                                </div>
+                            </div>
+                            <div class="product__info-card">
+                                <img src="./img/product-info-2.svg" alt="" class="product__info-img">
+
+                                <div class="product__info-text">
+                                    <p class="product__info-title">Доставка в Петропавловск-Камчатский</p>
+                                    <div class="product__info-text-block">
+                                        <p class="product__info-subtitle">BoxBerry</p>
+                                        <p class="product__info-subtitle">5 дней</p>
+                                    </div>
+                                    <div class="product__info-text-block">
+                                        <p class="product__info-subtitle">СДЕК</p>
+                                        <p class="product__info-subtitle">4-6 дней</p>
+                                    </div>
+                                </div>
+                                <div class="product__info-ballon">
+                                    <img src="./img/product-info-ballon.svg" alt="" class="product__ballon-img">
+                                </div>
+                            </div>
+                            <div class="product__info-card">
+                                <img src="./img/product-info-3.svg" alt="" class="product__info-img">
+
+                                <div class="product__info-text">
+                                    <p class="product__info-title">Гарантия</p>
+                                    <p class="product__info-subtitle">Мы гарантируем оригинальность нашей продукции</p>
+                                </div>
+                                
+                                <div class="product__info-ballon">
+                                    <img src="./img/product-info-ballon.svg" alt="" class="product__ballon-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__accordion">
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Информация</p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Результат:</p>
+                                        <ul class="accordion__list">
+                                            <li class="accordion__list-item">Противовоспалительное действие
+                                            </li>
+                                            <li class="accordion__list-item">Сужает поры
+                                            </li>
+                                            <li class="accordion__list-item">Снижает активность сальных желез
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Активные компоненты</p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <p class="accordion__answer-text">
+                                        <span>Азелаиновая кислота:</span> за счет снижения концентрации дигидротестостерона в себоцитах, контролирует секрецию себума и кератинизацию, снижает комедонообразование, ингибирует Cutibacterium Acnes, уменьшает воспаление.
+                                        Ретиноид HPR (Гидроксипинаколона Ретиноат): нормализует кератинизацию и борется с воспалением. Не повышает фотосенсибилизацию. Стимулирует обновление кожного покрова за счет более интенсивной пролиферации клеток.
+                                        <span>Гликолевая кислота:</span> оказывает кератолитическое действие, очищает протоки сально-волосяных фолликулов, контролирует функцию сальных желез, уменьшает проявления папулезной и пустулезной сыпи, является энхансером для других активных компонентов.
+                                        <span>Янтарная кислота:</span> мощный антиоксидант; регулирует кислородный обмен; выводит токсины, оказывает антибактериальное действие, улучшает капиллярный кровоток, уменьшает эритему, активирует процессы регенерации, предупреждает посттравматические пигментации и образование застойных пятен и уплотнений постакне.
+
+                                    </p>
+                                    <p class="accordion__list-title">Особенности Aknet Cleansing Water от BioNike:</p>
+                                    <ul class="accordion__list">
+                                        <li class="accordion__list-item">помещен во флакон с дозатором-помпой для удобного использования и экономного расхода;
+                                        </li>
+                                        <li class="accordion__list-item">эффективно очищает кожу от загрязнений, себума и бактерий;
+                                        </li>
+                                        <li class="accordion__list-item">дарит ощущение чистоты и свежести;
+                                        </li>
+                                        <li class="accordion__list-item">имеет нежную консистенцию;
+                                        </li>
+                                        <li class="accordion__list-item">ускоряет процессы заживления и ускоряет регенерацию;
+                                        </li>
+                                        <li class="accordion__list-item">подойдет для уставшей и чувствительной кожи;
+                                        </li>
+                                        <li class="accordion__list-item">минимизирует риски размножения бактерий;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Способ применения</p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <p class="accordion__answer-text">
+                                        <span>Азелаиновая кислота:</span> за счет снижения концентрации дигидротестостерона в себоцитах, контролирует секрецию себума и кератинизацию, снижает комедонообразование, ингибирует Cutibacterium Acnes, уменьшает воспаление.
+                                        Ретиноид HPR (Гидроксипинаколона Ретиноат): нормализует кератинизацию и борется с воспалением. Не повышает фотосенсибилизацию. Стимулирует обновление кожного покрова за счет более интенсивной пролиферации клеток.
+                                        <span>Гликолевая кислота:</span> оказывает кератолитическое действие, очищает протоки сально-волосяных фолликулов, контролирует функцию сальных желез, уменьшает проявления папулезной и пустулезной сыпи, является энхансером для других активных компонентов.
+                                        <span>Янтарная кислота:</span> мощный антиоксидант; регулирует кислородный обмен; выводит токсины, оказывает антибактериальное действие, улучшает капиллярный кровоток, уменьшает эритему, активирует процессы регенерации, предупреждает посттравматические пигментации и образование застойных пятен и уплотнений постакне.
+                                    </p>
+                                    <p class="accordion__list-title">Особенности Aknet Cleansing Water от BioNike:</p>
+                                    <ul class="accordion__list">
+                                        <li class="accordion__list-item">
+                                            помещен во флакон с дозатором-помпой для удобного использования и экономного расхода;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            эффективно очищает кожу от загрязнений, себума и бактерий;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            дарит ощущение чистоты и свежести;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            имеет нежную консистенцию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            ускоряет процессы заживления и ускоряет регенерацию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            подойдет для уставшей и чувствительной кожи;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            минимизирует риски размножения бактерий;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Противопоказания</p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <p class="accordion__answer-text">
+                                        <span>Азелаиновая кислота:</span> за счет снижения концентрации дигидротестостерона в себоцитах, контролирует секрецию себума и кератинизацию, снижает комедонообразование, ингибирует Cutibacterium Acnes, уменьшает воспаление.
+                                        Ретиноид HPR (Гидроксипинаколона Ретиноат): нормализует кератинизацию и борется с воспалением. Не повышает фотосенсибилизацию. Стимулирует обновление кожного покрова за счет более интенсивной пролиферации клеток.
+                                        <span>Гликолевая кислота:</span> оказывает кератолитическое действие, очищает протоки сально-волосяных фолликулов, контролирует функцию сальных желез, уменьшает проявления папулезной и пустулезной сыпи, является энхансером для других активных компонентов.
+                                        <span>Янтарная кислота:</span> мощный антиоксидант; регулирует кислородный обмен; выводит токсины, оказывает антибактериальное действие, улучшает капиллярный кровоток, уменьшает эритему, активирует процессы регенерации, предупреждает посттравматические пигментации и образование застойных пятен и уплотнений постакне.
+                                    </p>
+                                    <p class="accordion__list-title">Особенности Aknet Cleansing Water от BioNike:</p>
+                                    <ul class="accordion__list">
+                                        <li class="accordion__list-item">
+                                            помещен во флакон с дозатором-помпой для удобного использования и экономного расхода;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            эффективно очищает кожу от загрязнений, себума и бактерий;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            дарит ощущение чистоты и свежести;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            имеет нежную консистенцию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            ускоряет процессы заживления и ускоряет регенерацию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            подойдет для уставшей и чувствительной кожи;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            минимизирует риски размножения бактерий;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Состав и описание продукта</p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <p class="accordion__answer-text">
+                                        <span>Азелаиновая кислота:</span> за счет снижения концентрации дигидротестостерона в себоцитах, контролирует секрецию себума и кератинизацию, снижает комедонообразование, ингибирует Cutibacterium Acnes, уменьшает воспаление.
+                                        Ретиноид HPR (Гидроксипинаколона Ретиноат): нормализует кератинизацию и борется с воспалением. Не повышает фотосенсибилизацию. Стимулирует обновление кожного покрова за счет более интенсивной пролиферации клеток.
+                                        <span>Гликолевая кислота:</span> оказывает кератолитическое действие, очищает протоки сально-волосяных фолликулов, контролирует функцию сальных желез, уменьшает проявления папулезной и пустулезной сыпи, является энхансером для других активных компонентов.
+                                        <span>Янтарная кислота:</span> мощный антиоксидант; регулирует кислородный обмен; выводит токсины, оказывает антибактериальное действие, улучшает капиллярный кровоток, уменьшает эритему, активирует процессы регенерации, предупреждает посттравматические пигментации и образование застойных пятен и уплотнений постакне.
+                                    </p>
+                                    <p class="accordion__list-title">Особенности Aknet Cleansing Water от BioNike:</p>
+                                    <ul class="accordion__list">
+                                        <li class="accordion__list-item">
+                                            помещен во флакон с дозатором-помпой для удобного использования и экономного расхода;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            эффективно очищает кожу от загрязнений, себума и бактерий;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            дарит ощущение чистоты и свежести;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            имеет нежную консистенцию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            ускоряет процессы заживления и ускоряет регенерацию;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            подойдет для уставшей и чувствительной кожи;
+                                        </li>
+                                        <li class="accordion__list-item">
+                                            минимизирует риски размножения бактерий;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__accordion-item">
+                                <div class="accordion-question">
+                                    <p class="accordion__question-text">Детали </p>
+                                    <img src="./img/accordion-plus.svg" alt="" class="accordion__ico accordion-plus show">
+                                    <img src="./img/accordion-minus.svg" alt="" class="accordion__ico accordion-minus">
+                                </div>
+                                <div class="accordion-answer">
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Бренд</p>
+                                        <p class="accordion__answer-text">Bionike</p>
+                                    </div>
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Серия</p>
+                                        <p class="accordion__answer-text">Aknet </p>
+                                    </div>
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Группа товара</p>
+                                        <p class="accordion__answer-text">Пенка для умывания</p>
+                                    </div>
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Назначение</p>
+                                        <p class="accordion__answer-text">Антибактериальное, очищение</p>
+                                    </div>
+                                    <div class="accordion-answer__block">
+                                        <p class="accordion__answer-text">Объем</p>
+                                        <p class="accordion__answer-text">Bionike</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </div>  
+        <section class="product__reviews">
+            <div class="wrapper">
+                <h2 class="section-title reviews-title">Отзывы о BioNike Aknet Cleansing Water</h2>
+
+                <div class="reviews__container">
+                    <div class="product__reviews-block reviews__rating">
+                        <p class="product__reviews-title">Рейтинг товара</p>
+                        <p class="product__reviews-subtitle">на основании 150 отзывов</p>
+                        <div class="reviews__rating-rate">
+                            <div class="product__rating-stars">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                            </div>
+                            <p class="reviews__rating-value">4.99</p>
+                        </div>
+                        <a href="#!" class="reviews__rating-link more-link more__black-link">Написать отзыв<img src="./img/about-arrow.svg" alt=""></a>
+                    </div>
+                    <div class="product__reviews-block">
+                        <div class="product__reviews-top">
+                            <p class="product__reviews-title">Реальные отзывы наших покупателей</p>
+                            <p class="product__reviews-subtitle">Вы можете почитать отзывы или оставить свой</p>
+                        </div>
+
+                        <div class="product__reviews-filter">
+                            <p class="reviews__filter-title">Сортировать по</p>
+                            <div class="custom-select-wrapper simple-select">
+                                <div class="custom-select">
+                                  <span>По полезности</span>
+                                  <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                </div>
+                                <div class="custom-options">
+                                  <div class="custom-option" data-value="1">По полезности</div>
+                                  <div class="custom-option" data-value="2">По полезности</div>
+                                  <div class="custom-option" data-value="3">По полезности</div>
+                                  <div class="custom-option" data-value="4">По полезности</div>
+                                  <div class="custom-option" data-value="5">По полезности</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__reviews-tree">
+                            <div class="product__user-review">
+                                <div class="user__review-top">
+                                    <div class="user__review-author">
+                                        <img src="./img/review-avatar-1.png" alt="" class="review__author-avatar">
+                                        
+                                        <div class="review__author-block">
+                                            <p class="review__author-name">Мария Кузякина</p>
+                                            <p class="review__author-date">20 сентября 2023</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__rating-stars">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                    </div>
+                                </div>
+                                <p class="user__review-text">Хорошая умывалка.   Мне давно нравится продукция BioNike, но в ЗФ её не было.
+                                Мне нужен такой гель, очень он мне понравился, но к сожалению уже закончился</p>
+                                <div class="user__review-bottom">
+                                    <a href="#!" class="user__review-btn">Ответить</a>
+
+                                    <div class="user__review-rate">
+                                        <p class="review__rate-title">Отзыв был полезен:</p>
+                                        <a href="#!" class="review__rate-dislike review__rate-btn"><img src="./img/rate-dislike.svg" alt="">10</a>
+                                        <a href="#!" class="review__rate-like review__rate-btn"><img src="./img/rate-like.svg" alt="">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__user-review user__review-answer">
+                                <div class="user__review-top">
+                                    <div class="user__review-author">
+                                        <img src="./img/review-avatar-2.png" alt="" class="review__author-avatar">
+                                        
+                                        <div class="review__author-block">
+                                            <p class="review__author-name">Администратор</p>
+                                            <p class="review__author-date">20 сентября 2023</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__rating-stars">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                        <img src="./img/full-star.svg" alt="" class="product__rating-star">
+                                    </div>
+                                </div>
+                                <p class="user__review-text">Видите какие мы молодцы</p>
+                                <div class="user__review-bottom">
+                                    <a href="#!" class="user__review-btn">Ответить</a>
+
+                                    <div class="user__review-rate">
+                                        <p class="review__rate-title">Отзыв был полезен:</p>
+                                        <a href="#!" class="review__rate-dislike review__rate-btn"><img src="./img/rate-dislike.svg" alt="">10</a>
+                                        <a href="#!" class="review__rate-like review__rate-btn"><img src="./img/rate-like.svg" alt="">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#!" class="product__reviews-more more-link">Показать еще 5 отзывов</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product__slider">
+            <div class="wrapper">
+                <div class="section__header">
+                    <h2 class="section-title">Вам может понравиться</h2>
+
+                    <div class="slider-btns">
+                        <div class="product-slider-prev product-page-prev"></div>
+                        <div class="product-slider-next product-page-next"></div>
+                    </div>
+                </div>
+
+                <div class="swiper product-slider product-page-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-1.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Линейка</a>
+                                        <p class="product__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-2.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-3.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-4.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/stock-card-4.png" alt="">
+
+                                    <div class="card__top-btns">
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-1.svg" alt="" class="top__btn-img">
+                                        </a>
+                                        <a href="#!" class="card__top-btn">
+                                            <img src="./img/card-top-2.svg" alt="" class="top__btn-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <a href="#!" class="product__card-brand">Aknet</a>
+                                        <p class="product__card-title">Очищающая вода для лица</p>
+                                        <div class="product__card-prices">
+                                            <p class="product__card-price">25 000 ₽</p>
+                                            <p class="product__card-price-2">25 000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-btns">
+                                        <a href="#!" class="product__card-buy buy-btn">Купить <img src="./img/stock-card-ico.svg" alt=""></a>
+                                        <div class="custom-select-wrapper simple-select color-select">
+                                            <div class="custom-select">
+                                              <span><img src="./img/item-color-1.png" alt="">Цвет: марджента light</span>
+                                              <div class="custom-select-icon"><img src="./img/menu-item-arrow.svg" alt=""></div>
+                                            </div>
+                                            <div class="custom-options">
+                                              <div class="custom-option" data-value="1"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="2"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="3"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="4"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                              <div class="custom-option" data-value="5"><img src="./img/item-color-1.png" alt="">Цвет: марджента light</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles__slider">
+            <div class="wrapper">
+                <div class="section__header">
+                    <h2 class="section-title">Тут есть с кем поговорить о косметике!</h2>
+
+                    <div class="slider-btns">
+                        <div class="product-slider-prev articles-prev"></div>
+                        <div class="product-slider-next articles-next"></div>
+                    </div>
+                </div>
+
+                <div class="swiper product-slider articles-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product__card cosmetics__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/cosmetics-1.png" alt="">
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <span class="cosmetics__card-timer">До конца - 14 дней 04:33:03</span>
+                                        <p class="cosmetics__card-subtitle">Акции</p>
+                                        <p class="product__card-title cosmetics__card-title">Акция при покупке крема для тела после загара Sun Pro+ в подарок крокодил</p>
+                                        <div class="cosmetics__card-text">При условии покупки  продукции одним заказом.В акции участвуют товары, доставляемые со  склада в России. При умножении суммы заказа, количество подарков не  умножается. Акция действует до исчерпания акционного товара.</div>
+                                    </div>
+                                    <a href="#!" class="more-link">Узнать больше <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card cosmetics__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/cosmetics-2.png" alt="">
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <span class="cosmetics__card-timer">До конца - 14 дней 04:33:03</span>
+                                        <p class="cosmetics__card-subtitle">Акции</p>
+                                        <p class="product__card-title cosmetics__card-title">Акция при покупке крема для тела после загара Sun Pro+ в подарок крокодил</p>
+                                        <div class="cosmetics__card-text">При условии покупки  продукции одним заказом.В акции участвуют товары, доставляемые со  склада в России. При умножении суммы заказа, количество подарков не  умножается. Акция действует до исчерпания акционного товара.</div>
+                                    </div>
+                                    <a href="#!" class="more-link">Узнать больше <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card cosmetics__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/cosmetics-3.png" alt="">
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <span class="cosmetics__card-timer">До конца - 14 дней 04:33:03</span>
+                                        <p class="cosmetics__card-subtitle">Акции</p>
+                                        <p class="product__card-title cosmetics__card-title">Акция при покупке крема для тела после загара Sun Pro+ в подарок крокодил</p>
+                                        <div class="cosmetics__card-text">При условии покупки  продукции одним заказом.В акции участвуют товары, доставляемые со  склада в России. При умножении суммы заказа, количество подарков не  умножается. Акция действует до исчерпания акционного товара.</div>
+                                    </div>
+                                    <a href="#!" class="more-link">Узнать больше <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card cosmetics__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/cosmetics-4.png" alt="">
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <span class="cosmetics__card-timer">До конца - 14 дней 04:33:03</span>
+                                        <p class="cosmetics__card-subtitle">Акции</p>
+                                        <p class="product__card-title cosmetics__card-title">Акция при покупке крема для тела после загара Sun Pro+ в подарок крокодил</p>
+                                        <div class="cosmetics__card-text">При условии покупки  продукции одним заказом.В акции участвуют товары, доставляемые со  склада в России. При умножении суммы заказа, количество подарков не  умножается. Акция действует до исчерпания акционного товара.</div>
+                                    </div>
+                                    <a href="#!" class="more-link">Узнать больше <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__card cosmetics__card">
+                                <div class="product__card-top">
+                                    <img class="product__card-img" src="./img/cosmetics-4.png" alt="">
+                                </div>
+                                <div class="product__card-bottom">
+                                    <div class="product__card-info">
+                                        <span class="cosmetics__card-timer">До конца - 14 дней 04:33:03</span>
+                                        <p class="cosmetics__card-subtitle">Акции</p>
+                                        <p class="product__card-title cosmetics__card-title">Акция при покупке крема для тела после загара Sun Pro+ в подарок крокодил</p>
+                                        <div class="cosmetics__card-text">При условии покупки  продукции одним заказом.В акции участвуют товары, доставляемые со  склада в России. При умножении суммы заказа, количество подарков не  умножается. Акция действует до исчерпания акционного товара.</div>
+                                    </div>
+                                    <a href="#!" class="more-link">Узнать больше <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__title">Узнавайте первыми о распродажах и новинках!</h3>
+                    <p class="footer__subtitle">Зарегистрируйтесь сейчас, чтобы первыми получать информацию о новинках и спецпредложениях.</p>
+                </div>
+                <div class="footer__block">
+                    <form action="" class="footer__form">
+                        <div class="footer__form-block">
+                            <input type="email" class="footer__mail" placeholder="Ваша электронная почта">
+                            <button type="submit" class="footer__btn more-link more__black-link">Подписаться <img src="./img/about-arrow.svg" alt="" class="about__link-ico"></button>
+                        </div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-view">
+                              <img src="./img/checkbox.svg" alt="">
+                            </span>
+                            Я согласен на обработку Персональных данных и все такое в длинном длинном тексте о том как мы заботимся о вашей безопасности
+                          </label>
+                    </form>
+
+                </div>
+            </div>
+            <div class="footer__wrapper2">
+                <div class="footer__block">
+                    <img src="./img/footer-logo.png" alt="" class="footer__logo">
+                </div>
+                <div class="footer__block footer__lists">
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Наш каталог</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за лицом</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за телом</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Уход за волосами и кожей головы</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Солнцезащитные средства</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Товары для детей</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Гипоаллергенный макияж</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Нужна помощь</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Личный кабинет</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Политика возврата</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Информация об оплате картами</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Политика в отношении обработки персональных данных</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Согласие на обработку персональных данных</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Связаться с нами</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">О НАС</li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Каталог продукции</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Бестселлеры</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Промоакции</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Статьи и новости</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Оферта (пользовательское соглашение)</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">©2024 Официальный дистрибьютор и уполномоченное лицо  производителя товаров, маркированных товарным знаком BioNike – ООО  «МИЛОРАДА» – 129085, г. Москва, ул. Годовикова, д. 9, стр.16 – Все  авторские права защищены.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
