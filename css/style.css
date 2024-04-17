@@ -810,13 +810,12 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
 }
 
 .about__container {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-}
-.about__block {
-    flex-shrink: 0;
 }
 .about-title {
     margin-bottom: 16px;
@@ -1896,7 +1895,7 @@ p.basket__card-price-second {
         grid-template-columns: 1fr;
     }
     .about__container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 767px) {
