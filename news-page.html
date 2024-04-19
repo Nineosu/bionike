@@ -18,13 +18,13 @@
                     <p class="header__subtitle">100% оригинальная продукция!</p>
                     <nav class="header__nav">
                         <ul class="header__nav-links">
-                            <li class="header__nav-link">Бестселлеры</li>
-                            <li class="header__nav-link">Промоакции</li>
-                            <li class="header__nav-link">Полезные статьи
+                            <li class="header__nav-link"><a href="#!">Бестселлеры</a></li>
+                            <li class="header__nav-link"><a href="#!">Промоакции</a></li>
+                            <li class="header__nav-link"><a href="news.html">Полезные статьи</a>
                             </li>
-                            <li class="header__nav-link">О компании</li>
-                            <li class="header__nav-link">Доставка и оплата</li>
-                            <li class="header__nav-link">Контакты</li>
+                            <li class="header__nav-link"><a href="about.html">О компании</a></li>
+                            <li class="header__nav-link"><a href="#!">Доставка и оплата</a></li>
+                            <li class="header__nav-link"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <p class="header__subtitle">Доставка по всей территории РФ</p>
@@ -603,5 +603,137 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <div class="modal modal-basket" data-modal="basket">
+        <div class="modal__content">
+            <div class="modal__top">
+                <p class="modal__basket-title">Корзина</p>
+                <div class="modal__close close-btn"></div>
+            </div>
+            <div class="modal__basket-block">
+                <div class="modal__basket-items">
+                    <div class="modal__basket-item">
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__basket-item">
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__basket-item">
+                        <div class="basket__products-card">
+                            <div class="left-side">
+                                <img src="./img/basket-1.png" alt="" class="basket__card-img">
+                            </div>
+                            <div class="right-side">
+                                <div class="basket__card-info">
+                                    <p class="basket__card-brand">Aknet</p>
+                                    <p class="basket__card-title">DEFENCE COLOR CREAMY VELVET матовая помада для губ, 3,5 мл</p>
+                                </div>
+        
+                                <div class="basket__card-price">
+                                    <p class="basket__card-price-first">25 000 ₽</p>
+                                    <p class="basket__card-price-second">25 000 руб</p>
+                                </div>
+        
+                                <div class="basket__card-counter counter">
+                                    <button class="counter-minus counter-element counter-btn">
+                                        <img src="./img/counter-minus.png" alt="">
+                                    </button>
+                                    <span class="counter-value counter-element">1</span>
+                                    <button class="counter-plus counter-element counter-btn">
+                                        <img src="./img/counter-plus.png" alt="">
+                                    </button>
+                                </div>
+        
+                                <p class="basket__card-price-2">25 000 ₽</p>
+        
+                                <span class="basket__card-delete"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__order">
+                    <form action="" class="basket__order-form">
+                        <p class="basket__order-title">Сумма заказа</p>
+                        <div class="basket__order-block">
+                            <p class="basket__order-desc">Сумма:</p>
+                            <p class="basket__order-value">25 081 ₽ </p>
+                        </div>
+                        <div class="basket__order-block">
+                            <p class="basket__order-desc">Скидка:</p>
+                            <p class="basket__order-value">5 081 ₽ </p>
+                        </div>
+    
+                        <div class="basket__order-block basket__order-total">
+                            <p class="basket__order-desc basket__order-total-title">ИТОГО</p>
+                            <p class="basket__order-value">25 081 ₽ </p>
+                            <p class="basket__order-desc">Без учета доставки</p>
+                        </div>
+
+                        <a href="#!" class="basket__order-checkout more-link more__black-link">Оформить заказ <img src="./img/about-arrow.svg" alt=""></a>
+                        <a href="" class="basket__order-back more-link"><img src="./img/about-arrow.svg" alt="">Вернуться к покупкам</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>

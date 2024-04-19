@@ -430,7 +430,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
 
     font-size: 16px;
     line-height: 24px;
-    background: no-repeat right url('/img/search-ico.svg');
+    background: no-repeat right url('../img/search-ico.svg');
     background-color: #fff;
     width: 100%;
     cursor: pointer;
@@ -1978,19 +1978,19 @@ p.basket__card-price-second {
 }
 input[name="name"],
 input[name="surname"] {
-    background-image: url(/img/user-ico.svg);
+    background-image: url('../img/user-ico.svg');
 }
 input[name="tel"] {
-    background-image: url(/img/phone-ico.svg);
+    background-image: url('../img/phone-ico.svg');
 }
 input[name="email"] {
-    background-image: url(/img/form-ico.svg);
+    background-image: url('../img/form-ico.svg');
 }
 input[name="address"] {
-    background-image: url(/img/map-ico.svg);
+    background-image: url('../img/map-ico.svg');
 }
 input[name="comment"] {
-    background-image: url(/img/comment-ico.svg);
+    background-image: url('../img/comment-ico.svg');
 }
 .basket__checkout-form .checkbox-label {
     font-size: 16px;
