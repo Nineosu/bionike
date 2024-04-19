@@ -1,4 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // header search
+    const searchBtns = document.querySelectorAll('.header__search-btn'),
+          searchMenu = document.querySelector('.search__menu'),
+          searchMenuStand = searchMenu.querySelector('.search__menu-stand');
+
+    searchBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            searchMenu.classList.add('show');
+        });
+    });
+    searchMenuStand.addEventListener('click', (e) => {
+        searchMenu.classList.remove('show');
+    });
+
+    // modal
+    if (document.querySelector('.modal-btn')) {
+        const modalBtn = document.querySelectorAll('.modal-btn'),
+              modals = document.querySelectorAll('.modal');
+
+        modalBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modals.forEach(modal => {
+                    const closeBtn = modal.querySelector('.modal__close');
+                    
+                    if (btn.getAttribute('data-modal') == modal.getAttribute('data-modal')) {
+                        modal.classList.add('show');
+                    }
+
+                    closeBtn.addEventListener('click', () => {
+                        modal.classList.remove('show');
+                    });
+                });
+            });
+        });
+            
+    }
+
     // Menu pick
     menuItems = document.querySelectorAll('.header__menu-item'),
     subMenus = document.querySelectorAll('.header__submenu');
@@ -135,6 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
         actionMoreBtn(moreBtn, reviews, 'show');
     }
 
+    if (document.querySelector('.news__container')) {
+        const moreBtn = document.querySelector('.product__cards-more'),
+              reviews = document.querySelectorAll('.cosmetics__card');
+              
+        actionMoreBtn(moreBtn, reviews, 'show');
+    }
+
     // Accordion
     if (document.querySelector('.product__accordion-item')) {
         const accordionItems = document.querySelectorAll('.product__accordion-item');
@@ -229,6 +273,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     burgerClose.addEventListener('click', () => {
         burgerMenu.classList.remove('show');
+    });
+
+    // info ballons
+    const ballons = document.querySelectorAll('.product__info-ballon');
+
+    ballons.forEach(ballon => {
+        const img = ballon.querySelector('.product__ballon-img'),
+              block = ballon.querySelector('.info__ballon-block');
+        
+        img.addEventListener('mouseover', () => {
+            block.classList.add('show');
+        });
+        img.addEventListener('mouseout', () => {
+            block.classList.remove('show');
+        });
     });
 
     // Sliders
@@ -330,20 +389,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const productPageSlider = new Swiper('.product-page-slider', {
-        slidesPerView: 4,
+        slidesPerView: 1.3,
         spaceBetween: 24,
         navigation: {
           nextEl: '.product-page-next',
           prevEl: '.product-page-prev',
         },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 3
+            },
+            767: {
+                slidesPerView: 2
+            }
+        }
     });
 
     const articlesSlider = new Swiper('.articles-slider', {
-        slidesPerView: 4,
+        slidesPerView: 1.3,
         spaceBetween: 24,
         navigation: {
           nextEl: '.articles-next',
           prevEl: '.articles-prev',
         },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 3
+            },
+            767: {
+                slidesPerView: 2
+            }
+        }
     });
 });
