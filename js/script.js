@@ -222,13 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Tabs
-    function tabs(options, tabs, dataAttr) {
+    function tabs(options, tabs, dataAttr, activeClass) {
         options.forEach(option => {
             option.addEventListener('click', () => {
+                options.forEach(item => {
+                    item.classList.remove(activeClass);
+                });
                 tabs.forEach(tab => {
                     tab.classList.remove('tab-show');
 
                     if (option.getAttribute(dataAttr) == tab.getAttribute(dataAttr)) {
+                        if (activeClass) {
+                            option.classList.add(activeClass);
+                        }
                         tab.classList.add('tab-show');
                     }
                 });
@@ -244,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
               tabsItems2 = document.querySelectorAll('.tabs-item-2');
 
         tabs(tabsOptions, tabsItems, 'data-tab')
-        tabs(tabsOptions2, tabsItems2, 'data-tab')
+        tabs(tabsOptions2, tabsItems2, 'data-tab', 'active-option')
     }
 
     const submenuBlocks = document.querySelectorAll('.header__submenu-block');

@@ -288,7 +288,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
   
   /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio>input:checked+span::before {
-    background-image: url(/img/radio.svg);
+    background-image: url('../img/radio.svg');
     background-size: 10px 9px;
 }
   
@@ -438,7 +438,7 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
 .header__search::placeholder {
     color: #777E90;
 }
-.header__search-btn::after {
+.header__search-main.header__search-btn::after {
     position: absolute;
     content: 'Поиск по сайту';
     top: 50%;
@@ -650,6 +650,38 @@ input[type="checkbox"]:disabled + .checkbox-label .checkbox-view {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden; 
+}
+
+.header__adaptive-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    z-index: 2;
+    padding: 10px 5px;
+
+    display: none;
+}
+.adaptive__menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70px;
+    width: 100%;
+}
+.adaptive__link-ico {
+    width: 24px;
+    height: 24px;
+}
+.adaptive__link-title {
+    font-size: 10px;
+    line-height: 15px;
+    white-space: nowrap;
 }
 
 /* modal */
@@ -1897,7 +1929,7 @@ p.basket__card-price-second {
 .order__coupon-input {
     position: relative;
     width: 100%;
-    background-image: url(/img/gift-ico.svg);
+    background-image: url('../img/gift-ico.svg');
 }
 .arrow__right-label {
     position: relative;
@@ -2136,7 +2168,7 @@ input[name="comment"] {
     margin-bottom: 15px;
 }
 .buyers__tab-input {
-    background-image: url(/img/city-ico.svg);
+    background-image: url('../img/city-ico.svg');
 }
 
 .tabs-item,
@@ -2665,6 +2697,10 @@ ul.news__page-list {
     .about__cards {
         flex-direction: column;
     }
+
+    .header__adaptive-menu {
+        display: flex;
+    }
 }
 @media (max-width: 767px) {
     section {
@@ -2676,7 +2712,7 @@ ul.news__page-list {
     .main-bunner {
         padding: 40px 16px;
         min-height: 485px;
-        background-image: url(/img/main-bunner-adaptive.png);
+        background-image: url('../img/main-bunner-adaptive.png');
     }
     .main-title {
         font-size: 24px;
@@ -2889,7 +2925,7 @@ ul.news__page-list {
     }
     .modal-basket .modal__content {
         max-width: 100%;
-        height: 100%;
+        height: 100vh;
         padding: 16px;
     }
     .modal__basket-title {
