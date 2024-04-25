@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tabsOptions2 = document.querySelectorAll('.tabs-option-2'),
               tabsItems2 = document.querySelectorAll('.tabs-item-2');
 
-        tabs(tabsOptions, tabsItems, 'data-tab')
+        tabs(tabsOptions, tabsItems, 'data-tab', 'active-option')
         tabs(tabsOptions2, tabsItems2, 'data-tab', 'active-option')
     }
 
@@ -295,6 +295,93 @@ document.addEventListener('DOMContentLoaded', () => {
             block.classList.remove('show');
         });
     });
+
+    // Copying
+    function copyText(element) {
+        // Получаем элемент с текстовым значением
+        var valueElement = element.querySelector('.copying-value');
+        
+        // Создаем временный элемент для копирования текста
+        var tempInput = document.createElement("textarea");
+        tempInput.value = valueElement.innerText;
+        document.body.appendChild(tempInput);
+    
+        // Выбираем текст внутри элемента
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999); /* Для мобильных устройств */
+    
+        // Копируем текст в буфер обмена
+        document.execCommand("copy");
+        
+        // Удаляем временный элемент
+        document.body.removeChild(tempInput);
+    }
+    
+    if (document.querySelector('.copying-div')) {
+        const copyingDivs = document.querySelectorAll('.copying-div');
+
+        copyingDivs.forEach(div => {
+            div.addEventListener('click', () => {
+                copyText(div);
+            });
+        });
+    }
+
+    function addPagination(btns, pages, activeClass) {
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Убираем класс activeClass у всех кнопок
+                btns.forEach(btn => {
+                    btn.classList.remove(activeClass);
+                });
+    
+                // Добавляем класс activeClass только к нажатой кнопке
+                btn.classList.add(activeClass);
+    
+                // Убираем класс activeClass у всех страниц
+                pages.forEach(page => {
+                    page.classList.remove(activeClass);
+                    if (btn.getAttribute('data-page') == page.getAttribute('data-page')) {
+                        page.classList.add(activeClass)
+                    }
+                });
+            });
+        });
+    }
+
+    // table pages
+    if (document.querySelector('.table__pagination')) {
+        const tables = document.querySelectorAll('.table');
+
+        tables.forEach(table => {
+            const pages = table.querySelectorAll('.table__page'),
+                  paginationBtns = table.querySelectorAll('.table__page-btn');
+            addPagination(paginationBtns, pages, 'page-active');
+        });
+    }
+
+    // list adaptive
+    if (document.querySelector('.list__menu-btn')) {
+        const listBlock = document.querySelector('.list-block'),
+              openBtn = listBlock.querySelector('.list__menu-btn'),
+              listMenu = listBlock.querySelector('.list-menu'),
+              listClose = listMenu.querySelector('.close-btn'),
+              listOptions = listMenu.querySelectorAll('.tabs-option');
+
+        openBtn.addEventListener('click', () => {
+            listMenu.classList.toggle('show');
+        });
+
+        listClose.addEventListener('click', () => {
+            listMenu.classList.toggle('show');
+        });
+
+        listOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                listMenu.classList.remove('show');
+            });
+        });
+    }
 
     // Sliders
     const stockSlider = new Swiper('.stock-slider', {
